@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="dashboard-body">
+    <header>
+      Student Management Dashboard
+      <span style="float: right; font-size: 16px; font-weight: normal">
+        Welcome, <span id="userName"></span>
+      </span>
+    </header>
+
+    <div class="dashboard-container">
+      <nav class="sidebar">
+        <a href="/dashboard/index.html">Dashboard</a>
+        <a href="../student-profile/index.html">Profile</a>
+        <a href="#" id="logoutLink">Logout</a>
+      </nav>
+
+      <main class="main-content">
+        <div class="widgets">
+          <div class="widget">
+            <div class="widget-icon">👨‍🎓</div>
+            <div class="widget-info">
+              <span class="widget-title">Student Name</span>
+              <span class="widget-value" id="displayName">-</span>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-icon">📘</div>
+            <div class="widget-info">
+              <span class="widget-title">Course</span>
+              <span class="widget-value" id="displayCourse">-</span>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-icon">📞</div>
+            <div class="widget-info">
+              <span class="widget-title">Phone Number</span>
+              <span class="widget-value" id="displayPhone">-</span>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-icon">🆔</div>
+            <div class="widget-info">
+              <span class="widget-title">Student ID</span>
+              <span class="widget-value" id="displayStudentId">-</span>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-icon">🎂</div>
+            <div class="widget-info">
+              <span class="widget-title">Age</span>
+              <span class="widget-value" id="displayAge">-</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Info Button -->
+        <button id="openSignupBtn" style="margin-top: 20px">➕ Add Info</button>
+      </main>
+    </div>
+
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn" id="closeSignup">&times;</span>
+        <h2>Add Extra Info</h2>
+        <form id="popupSignupForm">
+          <input type="text" id="course" placeholder="Enter Course" required />
+          <input
+            type="text"
+            id="phone"
+            placeholder="Enter Phone Number"
+            required
+          />
+          <input
+            type="text"
+            id="studentId"
+            placeholder="Enter Student ID"
+            required
+          />
+          <input type="number" id="age" placeholder="Enter Age" required />
+          <button type="submit">Save Info</button>
+        </form>
+      </div>
+    </div>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>
