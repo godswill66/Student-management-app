@@ -17,6 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
+  padding: 20px;
+  margin: 0;
 }
 
 .home-body {
@@ -576,12 +578,10 @@ header {
   .widgets {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-
   /* Profile cards */
   .profile-info {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-
   /* Hero section */
   .hero h1 {
     font-size: 32px;
@@ -590,7 +590,7 @@ header {
     font-size: 17px;
   }
 }
-@media (max-width: 480px), (max-height: 601px) {
+@media (max-width: 480px), (min-width: 769px) and (max-width: 1024px){
   /* Dashboard */
   .hero {
     position: relative;
@@ -600,8 +600,8 @@ header {
   .hero img {
     position: relative;
     align-items: center;
-    width: 250px;
-    height: 300px;
+    width: 500px;
+    height: 600px;
   }
   .hero a {
     position: relative;
@@ -609,6 +609,7 @@ header {
     left: 130px;
   }
 }
+
 .header {
   position: fixed; /* Keep navbar on top */
   top: 0;
@@ -813,7 +814,6 @@ header {
     align-items: flex-start;
   }
 }
-
 @media (max-width: 600px) {
   .about,
   .contact {
