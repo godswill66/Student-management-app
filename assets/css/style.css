@@ -752,7 +752,7 @@ header {
 .footer-about,
 .footer-links,
 .footer-social {
-  flex: 1 1 220px;
+  
   min-width: 180px;
 }
 
