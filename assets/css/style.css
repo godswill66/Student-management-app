@@ -184,7 +184,7 @@ p {
 
 .testimonials {
   border-radius: 15px;
-  margin-top: 8px;
+  margin-top: 4rem;
   padding: 60px 20px;
   text-align: center;
 }
@@ -197,7 +197,6 @@ p {
 
 .testimonial-list {
   display: flex;
-  flex-direction: column;
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
@@ -211,7 +210,8 @@ p {
 }
 
 .testimonial img {
-  width: 80px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .testimonial p {
