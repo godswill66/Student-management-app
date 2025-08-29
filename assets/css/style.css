@@ -17,6 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
+  padding: 20px;
+  margin: 0;
 }
 
 .home-body {
@@ -456,6 +458,7 @@ header {
    LANDING PAGE HERO SECTION
  */
 .hero {
+  position: relative;
   text-align: left;
   color: white;
   padding: 100px 20px;
@@ -465,14 +468,13 @@ header {
   height: 400px;
   width: 600px;
   position: absolute;
-  top: 90px;
-  right: 50px;
+  top: 100px;
+  right: 70px;
 }
 .hero h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
-
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
@@ -488,11 +490,24 @@ header {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
+@media (max-width: 768px) {
+  .hero img {
+    position: relative;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    top: 20px;
+    right: 0px;
+  }
+  .hero{
+  position: relative;
+  top: 70px;
+  text-align: center;
+}
+}
 .hero a:hover {
   background: #006666;
 }
-
 /* 
    RESPONSIVE MEDIA QUERIES
  */
@@ -576,37 +591,16 @@ header {
   .widgets {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-
   /* Profile cards */
   .profile-info {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-
   /* Hero section */
   .hero h1 {
     font-size: 32px;
   }
   .hero p {
     font-size: 17px;
-  }
-}
-@media (max-width: 480px), (max-height: 601px) {
-  /* Dashboard */
-  .hero {
-    position: relative;
-    text-align: center;
-    top: 10px;
-  }
-  .hero img {
-    position: relative;
-    align-items: center;
-    width: 250px;
-    height: 300px;
-  }
-  .hero a {
-    position: relative;
-    top: 150px;
-    left: 130px;
   }
 }
 .header {
@@ -825,7 +819,6 @@ header {
     align-items: flex-start;
   }
 }
-
 @media (max-width: 600px) {
   .about,
   .contact {
