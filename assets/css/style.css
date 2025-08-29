@@ -496,13 +496,19 @@ header {
     align-items: center;
     width: 200px;
     height: 500px;
-    top: 20px;
-    right: 0px;
+    top: 70px;
+    right: 70px;
+    border-radius: 10px;
   }
   .hero{
   position: relative;
   top: 70px;
   text-align: center;
+}
+.hero a{
+  position: relative;
+  bottom: 470px;
+  left: 100px;
 }
 }
 .hero a:hover {
