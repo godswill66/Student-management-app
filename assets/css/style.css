@@ -11,16 +11,21 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #008080, #20b2aa);
+  background-color: rgb(5, 161, 161);
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
   align-items: center;
   color: #333;
   padding: 20px;
   margin: 0;
 }
 
+
+h2{
+  text-decoration: underline;
+}
 .home-body {
   display: block;
 }
@@ -143,7 +148,7 @@ p {
 }
 
 .features h2 {
-  font-size: 2em;
+  font-size: 1.6rem;
   margin-bottom: 40px;
   color: #ccc;
 }
@@ -192,7 +197,7 @@ p {
 }
 
 .testimonials h2 {
-  font-size: 2em;
+  font-size: 1.9rem;
   margin-bottom: 40px;
   color: #ccc;
 }
@@ -663,14 +668,14 @@ header {
 }
 
 .contact h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .contact-intro {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
   color: white;
 }
 
@@ -698,6 +703,14 @@ header {
 
 .contact-info p {
   margin-bottom: 0.7rem;
+}
+
+.faq ul {
+  text-align: left;
+}
+
+.contact-div {
+  text-align: left;
 }
 
 .faq li {
@@ -846,3 +859,5 @@ header {
     margin-right: 0;
   }
 }
+
+
