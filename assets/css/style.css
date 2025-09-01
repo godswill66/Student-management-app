@@ -26,7 +26,7 @@ body {
   color: #fff;
 }
 
-#underline{
+.underline{
   text-decoration: underline;
 }
 
@@ -243,7 +243,7 @@ p {
 }
 
 /* border-radius */
-#radius{
+.radius{
   border-radius: 10px;
 }
 
