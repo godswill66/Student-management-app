@@ -11,10 +11,11 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #008080, #20b2aa);
+  background-color: rgb(5, 161, 161);
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
   align-items: center;
   color: #333;
   padding: 20px;
@@ -151,7 +152,7 @@ p {
 }
 
 .features h2 {
-  font-size: 2em;
+  font-size: 1.6rem;
   margin-bottom: 40px;
 }
 
@@ -199,6 +200,7 @@ p {
 }
 
 .testimonials h2 {
+  font-size: 1.9rem;
   margin-bottom: 40px;
 }
 
@@ -513,14 +515,16 @@ header {
     align-items: center;
     width: 200px;
     height: 500px;
-    top: 20px;
+    top: 70px;
     right: 0px;
+    border-radius: 10px;
   }
   .hero{
   position: relative;
   top: 70px;
   text-align: center;
 }
+
 }
 .hero a:hover {
   background: #006666;
@@ -671,8 +675,8 @@ header {
   color: white;
   text-align: center;
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem 1.5rem;
   margin: 2rem auto;
   max-width: 900px;
@@ -680,18 +684,19 @@ header {
 }
 
 .contact h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .contact-intro {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
   color: white;
 }
 
 .contact-container {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -701,6 +706,10 @@ header {
 .contact-info {
   flex: 1 1 220px;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 329px;
+  width: 100%;
+  margin-right: 20px;
   padding: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -709,6 +718,14 @@ header {
 
 .contact-info p {
   margin-bottom: 0.7rem;
+}
+
+.faq ul {
+  text-align: left;
+}
+
+.contact-div {
+  text-align: left;
 }
 
 .faq li {
@@ -749,7 +766,7 @@ header {
 .footer-about,
 .footer-links,
 .footer-social {
-  flex: 1 1 220px;
+  
   min-width: 180px;
 }
 
@@ -776,9 +793,22 @@ header {
   padding: 0;
 }
 
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq{
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   border-radius: 8px;
+}
+
 .footer-links li {
   margin-bottom: 0.5rem;
 }
+
 
 .footer-links a {
   color: #dbe2ea;
@@ -836,3 +866,19 @@ header {
     padding: 0.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .contact-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-info,
+  .faq {
+    width: 100%;
+    min-height: 100%;
+    margin-right: 0;
+  }
+}
+
+
