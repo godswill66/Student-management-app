@@ -165,7 +165,6 @@ p {
 .feature {
   background-color: rgba(0, 0, 0, 0.5);
   width: 250px;
-  border-radius: 15px;
   padding: 20px;
   text-align: center;
   transition: box-shadow 0.3s;
@@ -211,12 +210,12 @@ p {
 
 .testimonial {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
   padding: 20px 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial img {
+  height: 250px;
   width: 100%;
   border-radius: 8px;
 }
@@ -231,6 +230,23 @@ p {
   margin-top: 15px;
   color: white;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .testimonial-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+}
+
+/* border-radius */
+.testimonial,
+.feature,
+.contact-info,
+.faq,
+.site-footer{
+  border-radius: 10px;
 }
 
 /* 
@@ -499,7 +515,7 @@ header {
   .hero img {
     position: relative;
     align-items: center;
-    width: 400px;
+    width: 200px;
     height: 500px;
     top: 20px;
     right: 0px;
@@ -689,7 +705,6 @@ header {
 
 .contact-info {
   flex: 1 1 220px;
-  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
   background-color: rgba(0, 0, 0, 0.5);
   height: 329px;
@@ -751,7 +766,7 @@ header {
 .footer-about,
 .footer-links,
 .footer-social {
-  flex: 1 1 220px;
+  
   min-width: 180px;
 }
 
