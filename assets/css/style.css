@@ -500,20 +500,39 @@ header {
     right: 0px;
     border-radius: 10px;
   }
-  .hero{
-  position: relative;
-  top: 70px;
-  text-align: center;
-}
-
+  .hero {
+    position: relative;
+    top: 70px;
+    text-align: center;
+  }
+  .hero a {
+    position: relative;
+  }
 }
 .hero a:hover {
   background: #006666;
 }
+
+@media (min-width: 768px){
+.hero {
+  position: relative;
+  text-align: left;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero img {
+  border-radius: 32px 5px 32px 5px;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+}
+}
 /* 
    RESPONSIVE MEDIA QUERIES
  */
-
 /* Small screens: mobile phones */
 @media (max-width: 600px) {
   body {
@@ -561,7 +580,6 @@ header {
   .profile-info {
     grid-template-columns: 1fr;
   }
-
   /* Hero section */
   .hero h1 {
     font-size: 28px;
@@ -573,7 +591,6 @@ header {
     padding: 10px 20px;
   }
 }
-
 /* Medium screens: tablets */
 @media (min-width: 601px) and (max-width: 992px) {
   /* Dashboard */
