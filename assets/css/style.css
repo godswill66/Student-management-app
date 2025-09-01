@@ -517,14 +517,16 @@ header {
     align-items: center;
     width: 200px;
     height: 500px;
-    top: 20px;
+    top: 70px;
     right: 0px;
+    border-radius: 10px;
   }
   .hero{
   position: relative;
   top: 70px;
   text-align: center;
 }
+
 }
 .hero a:hover {
   background: #006666;
@@ -791,6 +793,12 @@ header {
 .footer-links ul {
   list-style: none;
   padding: 0;
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .faq{
