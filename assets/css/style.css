@@ -781,6 +781,12 @@ header {
   padding: 0;
 }
 
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .faq{
    background-color: rgba(0, 0, 0, 0.5);
    padding: 20px;
