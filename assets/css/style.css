@@ -489,6 +489,7 @@ header {
   position: absolute;
   top: 100px;
   right: 70px;
+  padding-bottom: 50px;
 }
 .hero h1 {
   font-size: 36px;
@@ -498,7 +499,6 @@ header {
   font-size: 18px;
   margin-bottom: 30px;
 }
-
 .hero a {
   display: inline-block;
   padding: 12px 25px;
@@ -507,32 +507,63 @@ header {
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  transition: background 0.3s ease;
-}
-@media (max-width: 768px) {
-  .hero img {
-    position: relative;
-    align-items: center;
-    width: 200px;
-    height: 500px;
-    top: 70px;
-    right: 0px;
-    border-radius: 10px;
-  }
-  .hero{
-  position: relative;
-  top: 70px;
-  text-align: center;
 }
 
+@media (max-width: 767px){
+  .hero img {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  .hero {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .hero a {
+    position: relative;
+    top: 470px;
+  }
 }
-.hero a:hover {
-  background: #006666;
+@media (min-width: 767px){
+  .hero img {
+    border-radius: 32px 5px 32px 5px;
+    padding: 2;
+    display: inline;
+    text-align: ;
+  }
+  /* iPad Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero {
+    text-align: center;
+    padding: 70px 20px;
+  }
+  .hero img {
+    position: static;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
 }
+}
+
 /* 
    RESPONSIVE MEDIA QUERIES
  */
-
 /* Small screens: mobile phones */
 @media (max-width: 600px) {
   body {
@@ -580,7 +611,6 @@ header {
   .profile-info {
     grid-template-columns: 1fr;
   }
-
   /* Hero section */
   .hero h1 {
     font-size: 28px;
@@ -592,7 +622,6 @@ header {
     padding: 10px 20px;
   }
 }
-
 /* Medium screens: tablets */
 @media (min-width: 601px) and (max-width: 992px) {
   /* Dashboard */
