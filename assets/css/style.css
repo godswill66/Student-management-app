@@ -217,7 +217,7 @@ p {
 }
 
 .testimonial img {
-  min-height: 200px;
+  height: 200px;
   width: 100%;
   border-radius: 8px;
 }
@@ -733,7 +733,7 @@ header {
   color: white;
 }
 
-.contact-div {
+.contact-div p {
   font-size: 16px;
 }
 
