@@ -678,8 +678,7 @@ header {
   align-items: flex-start;
   flex-direction: row;
   padding: 3rem 1.5rem;
-  margin: 2rem auto;
-  max-width: 900px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -697,6 +696,7 @@ header {
 
 .contact-container {
   height: 100%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -714,6 +714,10 @@ header {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: white;
+}
+
+.contact-div p {
+  font-size: 16px;
 }
 
 .contact-info p {
@@ -801,6 +805,7 @@ header {
 
 .faq{
    background-color: rgba(0, 0, 0, 0.5);
+   width: 60%;
    padding: 20px;
    border-radius: 8px;
 }
