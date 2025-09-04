@@ -254,6 +254,7 @@ p {
 
 /* Reset body for dashboard */
 .dashboard-body {
+  padding: 0px;
   background: #fafafa;
   display: block;
   height: auto;
@@ -425,7 +426,7 @@ header {
   flex-direction: column;
   border-radius: 10px;
   border: 1px solid;
-  background-color: #ddd;
+  background-color: #f4f4f4;
 }
 .profile-header {
   font-size: 26px;
