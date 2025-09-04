@@ -71,9 +71,9 @@ if (document.body.classList.contains("dashboard-body")) {
   });
 }
 
-// ======================
+// 
 // STUDENT PROFILE
-// ======================
+// 
 if (document.body.classList.contains("profile-body")) {
   document.getElementById("profileName").textContent = localStorage.getItem("fullname") || "-";
   document.getElementById("profileEmail").textContent = localStorage.getItem("email") || "-";
@@ -83,9 +83,9 @@ if (document.body.classList.contains("profile-body")) {
   document.getElementById("profileAge").textContent = localStorage.getItem("age") || "-";
 }
 
-// ======================
+// 
 // MODAL (Add/Edit Info) FOR DASHBOARD & PROFILE
-// ======================
+//
 const signupModal = document.getElementById("signupModal");
 const openSignupBtn = document.getElementById("openSignupBtn");
 const closeSignup = document.getElementById("closeSignup");
@@ -139,8 +139,21 @@ if (popupSignupForm) {
     if (document.getElementById("profilePhone")) document.getElementById("profilePhone").textContent = phone;
     if (document.getElementById("profileStudentId")) document.getElementById("profileStudentId").textContent = studentId;
     if (document.getElementById("profileAge")) document.getElementById("profileAge").textContent = age;
-
     popupSignupForm.reset();
     signupModal.style.display = "none";
   });
+  const uploadBtn = document.getElementById("uploadBtn");
+const imageUpload = document.getElementById("imageUpload");
+const profileImage = document.getElementById("profileimage");
+// When ➕ button is clicked → open file picker
+uploadBtn.addEventListener("click", () => {
+  imageUpload.click();
+});
+// When a file is selected → preview it
+imageUpload.addEventListener("change", (event) => {
+  const file = event.target.files[0];
+  if (file) {
+    profileImage.src = URL.createObjectURL(file);
+  }
+});
 }

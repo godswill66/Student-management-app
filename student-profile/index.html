@@ -9,55 +9,52 @@
 <body class="profile-body">
   <div class="profile-container">
     <div class="profile-header">👤 Student Profile</div>
-    <div class="profile-info">
+<div class="profile-pic">
+  <img id="profileimage" src="https://via.placeholder.com/120" alt="Profile">
+  <button type="button" class="pic-edit" id="uploadBtn">➕</button>
+  <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+</div>
+<div class="profile-info">
       <div class="profile-card">
-        <div class="profile-icon">🙍</div>
         <div class="profile-text">
           <span class="profile-label">Name</span>
           <span class="profile-value" id="profileName">-</span>
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-icon">📧</div>
         <div class="profile-text">
           <span class="profile-label">Email</span>
           <span class="profile-value" id="profileEmail">-</span>
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-icon">📘</div>
         <div class="profile-text">
           <span class="profile-label">Course</span>
           <span class="profile-value" id="profileCourse">-</span>
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-icon">📞</div>
         <div class="profile-text">
           <span class="profile-label">Phone Number</span>
           <span class="profile-value" id="profilePhone">-</span>
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-icon">🆔</div>
         <div class="profile-text">
           <span class="profile-label">Student ID</span>
           <span class="profile-value" id="profileStudentId">-</span>
         </div>
       </div>
       <div class="profile-card">
-        <div class="profile-icon">🎂</div>
         <div class="profile-text">
           <span class="profile-label">Age</span>
           <span class="profile-value" id="profileAge">-</span>
         </div>
       </div>
     </div>
-
     <!-- Add Info Button -->
     <button id="openSignupBtn" style="margin-top: 20px">➕ Edit Info</button>
   </div>
-
   <!-- Modal for Adding/Editing Info -->
   <div id="signupModal" class="modal">
     <div class="modal-content">
