@@ -420,6 +420,7 @@ header {
   align-content: center;
 }
 .profile-container {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
